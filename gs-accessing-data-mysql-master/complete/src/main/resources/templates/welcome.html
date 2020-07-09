@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang= "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+th {
+  text-align: left;
+}
+th {
+  background-color: #E6E6FA
+;
+}
+</style>
+</head>
+<body><h2>Invoice Tracking Dashboard</h2>
+<form method="POST"  th:action="@{/demo/Redirect}">
+ <table style="width:100%">
+   <tr>
+    <th>Invoice Status</th>
+    <th>Consignment Number</th>
+    <th>Invoice ID</th>
+   </tr>
+   <tr th:each="person : ${list}">
+     <td th:text="${person.email}">James</td>
+      <td th:text="${person.name}">2.41</td>
+      <td th:text="${person.CDU_ID}">2.41</td>
+  </tr>
+</table><br/><br/>
+
+<input type= "submit" value="GO BACK" />
+</form>
+</body>
+</html>

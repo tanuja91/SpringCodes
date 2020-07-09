@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang= "en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"/>
+  <title>ICM Invoice Dashboard</title>
+</head>
+<body><h2>Invoice Tracking Dashboard</h2>
+  <form method="POST" action="#" th:action="@{/demo/Submit}" th:object="${user}">
+  <label>Name:</label>
+  <input type="text" th:field="*{name}" /></br></br>
+  <input type="submit" />
+  </form>
+</body>
+</html>

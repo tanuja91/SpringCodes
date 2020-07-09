@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<h3>Login Form</h3>
+<br/>
+<font style="color: red" th:text="${errorMessage}"></font>
+<form method="POST"  th:object="${cred}">
+Email: <input type="text" name="email" th:field="*{email}" /><br/><br/>
+Password: <input type="password" name="password" th:field="*{password}"/><br/><br/>
+<input type="submit" value="Login"/>
+</form>
+</html>
