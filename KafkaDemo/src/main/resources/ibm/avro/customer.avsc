@@ -1,0 +1,6 @@
+{"type":"record","name":"CustomerEvent","namespace": "com.ibm.avro",
+	"fields":[{"name":"custid","type":"string"},
+				{"name":"cname","type":"string"},
+				{"name":"shipto","type":"string"}
+				
+	]}

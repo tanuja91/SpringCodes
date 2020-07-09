@@ -1,0 +1,36 @@
+{
+  "name": "MyClass",
+  "type": "record",
+  "namespace": "com.acme.avro",
+  "fields": [
+    {
+      "name": "CreatedAt",
+      "type": "string"
+    },
+    {
+      "name": "Text",
+      "type": "string"
+    },
+    {
+      "name": "User",
+      "type": {
+        "name": "User",
+        "type": "record",
+        "fields": [
+          {
+            "name": "Id",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "aliasName",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

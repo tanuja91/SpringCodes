@@ -1,0 +1,6 @@
+{"type":"record","name":"OrderEvent","namespace": "com.ibm.avro",
+	"fields":[{"name":"orderId","type":"string"},
+				{"name":"quantity","type":"string"},
+				{"name":"productId","type":"string"},
+				{"name":"custid","type":"string"}
+	]}
