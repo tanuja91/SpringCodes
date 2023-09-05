@@ -9,7 +9,7 @@
 	<properties>
 		<!-- Keep versions as properties to allow easy modification -->
 		<avro.version>1.8.1</avro.version>
-		<kafka.version>2.2.1</kafka.version>
+		<kafka.version>5.3.0-ccs</kafka.version>
 		<!-- Maven properties for compilation -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
